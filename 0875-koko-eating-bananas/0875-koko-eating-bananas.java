@@ -7,7 +7,7 @@ class Solution {
             int total = 0;
         
             for(int pile : piles){
-                total += (mid + pile - 1) / mid;
+                total += Math.ceil((double)pile / mid);
             }
             
             if(total > h)
@@ -15,9 +15,7 @@ class Solution {
             else
                 end = mid;
         }
-        
         return end;
-    }
         
-  
+    } 
 }
