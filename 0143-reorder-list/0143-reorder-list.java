@@ -24,8 +24,6 @@ class Solution {
         if(list.size() % 2 == 1)
             answerList.add(list.get(nIndex / 2));
         
-        System.out.println(answerList);
-        
         for(int val : answerList){
             head.val = val;
             head = head.next;
